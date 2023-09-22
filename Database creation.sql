@@ -1,9 +1,4 @@
 CREATE DATABASE employee_payroll;
-CREATE USER 'PayrollSystem'@'localhost' IDENTIFIED BY 'Password@123';
-SELECT user, host FROM mysql.user; --tocheckusers
-GRANT ALL PRIVILEGES ON employee_payroll.* TO 'PayrollSystem'@'localhost';
-FLUSH PRIVILEGES;
-SHOW GRANTS FOR 'PayrollSystem'@'localhost'; --tocheckgrantpermission
 
 USE employee_payroll;
 --emptable
